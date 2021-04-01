@@ -44,8 +44,8 @@ fun Application.module() {
 
     //Set up database connection
     Database.connect(
-        "jdbc:postgresql://localhost:5433/mtaa?currentSchema=mtaa", driver = "org.postgresql.Driver",
-        user = "techtalk", password = "mtaaTechTalk0120"
+        "jdbc:postgresql://ec2-108-128-104-50.eu-west-1.compute.amazonaws.com:5432/dcteii1d46oesj?currentSchema=mtaa", driver = "org.postgresql.Driver",
+        user = "qxjoievilubmrg", password = "c9674677f2df25d705e75a9bec90e1146865c52d6fafcea80efc9be396655085"
     )
 }
 
