@@ -11,14 +11,6 @@ import java.io.File
 import java.text.DateFormat
 
 fun main(args: Array<String>) {
-    val jksFile = File("build/temporary.jks").apply {
-        parentFile.mkdirs()
-    }
-
-    if (!jksFile.exists()) {
-        generateCertificate(jksFile) // Generates the SSL certificate
-    }
-
     io.ktor.server.netty.EngineMain.main(args)
 }
 
