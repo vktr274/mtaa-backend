@@ -1,0 +1,6 @@
+{
+  "name": "TechTalk",
+  "description": "Tech reviews",
+  "image": "heroku/java",
+  "addons": [ "heroku-postgresql" ]
+}

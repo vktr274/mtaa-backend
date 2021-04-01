@@ -54,10 +54,6 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
 }
 
-tasks.create("stage") {
-    dependsOn("installDist")
-}
-
 //This is needed to load SSL certificate before app start
 task("generateJks", JavaExec::class) {
     dependsOn("classes")
